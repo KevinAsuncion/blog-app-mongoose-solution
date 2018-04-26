@@ -136,7 +136,7 @@ describe('Blog posts API', function(){
             })
             .then(function(post){
                 expect(post.title).to.equal(newPost.title);
-                expect(post.content).to.equal(newPost.content;
+                expect(post.content).to.equal(newPost.content);
                 expect(post.author.firstName).to.equal(newPost.author.firstName);
                 expect(post.author.lastName).to.equal(newPost.author.lastName);
             });
