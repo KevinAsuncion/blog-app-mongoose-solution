@@ -71,11 +71,11 @@ describe('Blog posts API', function(){
            .then(function(_res){
                res = _res;
                expect(res).to.have.status(200);
-               expect(res.body.posts).to.have.length.of.at.least(1);
+               expect(res.body).to.have.length.of.at.least(1);
                return BlogPost.count();
            })
            .then(function(count){
-               expect(res.body.posts).to.have.length.of(count);
+               expect(res.body).to.have.length.of(count);
            });
         });
         
@@ -108,7 +108,7 @@ describe('Blog posts API', function(){
     });
 
     describe('POST endpoint', function(){
-        it('should ad a new blog post', function(){
+        it('should add a new blog post', function(){
             const newPost = {
                 title: faker.lorem.sentence(),
                 author: {
