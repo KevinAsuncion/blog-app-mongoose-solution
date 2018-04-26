@@ -1,4 +1,11 @@
 language: node_js
 node_js: node
 services:
-- mongodb 
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: SPo4Q8AVnAbGbZcMRjGyMJ8Is8vxyyzZ28MRkaKux/mfhJn9GsNX21yyMSBmhMG6lKq7p15W3ZoPpJMT7ClvoInsSCCEoW/keBv89Nw2RwMkxyjlcCTRCQ/pAdJYmY4rPhdivd1JHK4x+uj0PRwK9ZOlGauLEmftULLlWjyGQN6CyKXdNG9bKylqrJaDuV0gOfWuzEqO7V8zB59XhmAJBi/nltq9CUigpiSBN5chYgAAPN5WOwHNe/yYe5EZPrDtg86pRcgRnexa8Tmqj3eBY2AP1V3ZdDg14eN53anqC+Pv04/aIGvFFU3JGa7qUlQHDF5QqMGzUjXBCe5tWJRBQzM0yX9eaBIUba3lDTpga2Z/pgihsqiJPHa5ntj9HBo+43NrCjXVdg8UYg4Fg1ojwSmsI5T+UX7WM89vlnSv8G+srGOA5J41k0prnB2E4kJkFggU9zz0xubLOqGFMcvHwLq9bKfPk3zHr0kaACVwn87VkVt1jV4EzorViTwuC97dJxLLo15gpILwV4ff4sMwb2irw12WeGPfJASpKMEMZPy+Njq2hz13o84GHrMPduAvqf41F0XsMIu6Gleio4rJ9dQD+i3SffkFQk9+gmmBaMRWx+X1n5JE6vMNdUKj1abUtj0ElWsCX1+g3e235Qd6AxGBipucy86xp6ov7MVUCEg=
+  app: blooming-lake-29663
+  on:
+    repo: KevinAsuncion/blog-app-mongoose-solution
